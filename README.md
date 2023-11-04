@@ -39,12 +39,12 @@ All applications can be improved. Here are a few suggestions for this one;
 
 ## Implementation
 
-The application is built with a server-side component represented by the `server.js` file. To power the backend, I've chosen to use **Node.js** along with **Express**. Node.js is known for its efficiency in handling asynchronous tasks, making it a good choice for server-side applications. Express is built on top of Node.js and simplifies the creation of web servers and APIs. This combination offers a smooth and efficient way to manage HTTP requests and responses. For performing HTTP requests, I'm using **Axios**, which is a promise-based HTTP client for Node.js. 
-To enhance security, the API key is securely stored in a separate `.env` file. The key is accessed using the `dotenv` npm module, which allows me to keep sensitive information away from the rest of the code. 
-
-Within the backend, I've created an endpoint called **getWeatherData**. This endpoint is responsible for fetching weather data from the OpenWeatherMap API (One Call API 2.5). Once data is obtained from the OpenWeatherMap API and is sent to **getWeatherData**, this data is then sent to the frontend where `script.js` retrieves and displays the data. 
-
-The frontend of this application is built using pure HTML, CSS, and JavaScript. 
+- The application is built with a server-side component represented by the `server.js` file. To power the backend, I've chosen to use **Node.js** along with **Express**. Node.js is known for its efficiency in handling asynchronous tasks, making it a good choice for server-side applications. Express is built on top of Node.js and simplifies the creation of web servers and APIs. This combination offers a smooth and efficient way to manage HTTP requests and responses. 
+- For performing HTTP requests, I'm using **Axios**, which is a promise-based HTTP client for Node.js. 
+- To enhance security, the API key is securely stored in a separate `.env` file. The key is accessed using the `dotenv` npm module, which allows me to keep sensitive information away from the rest of the code. 
+- Within the backend, I've created an endpoint called **getWeatherData**. This endpoint is responsible for fetching weather data from the OpenWeatherMap API (One Call API 2.5). 
+- Once data is obtained from the OpenWeatherMap API and is sent to **getWeatherData**, this data is then sent to the frontend where `script.js` retrieves and displays the data. 
+- The frontend of this application is built using pure HTML, CSS, and JavaScript, and consists of three files, `index.html`, `styles.css` and `script.js`.
 
 
 ## Credit
