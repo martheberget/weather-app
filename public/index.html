@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="search">
+                <input type="text" class="search-input" name="search" placeholder="Search for a location" spellcheck="false" aria-label="Search for a city">
+                <button class="search-btn"><img src="/static/search.png" aria-hidden="true"></button>
+                <label class="switch">
+                    <input type="checkbox">
+                    <div class="slider"></div>
+                    <div class="slider-card">
+                        <div class="slider-card-face slider-card-front"></div>
+                        <div class="slider-card-face slider-card-back"></div>
+                    </div>
+                </label>
+            </div>
+            <div>
+                <p class="error-message">Response returned an error. Did you input a valid city?</p>
+            </div>
+        </div> 
+    </nav>
+    <div class="container">
+        <div class="overview">
+            <h1 class="forecast">5-Day Weather Forecast<b class="city-name"></b></h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="weather">
+                <h3 class="day">Day</h3>
+                <img src="/static/sun.png" class="weather-icon" aria-hidden="true">
+                <h1 class="temp">21°C</h1>
+                <h2 class="city">Oslo</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="/static/humidity.png" alt="">
+                        <div>
+                            <p class="humidity">50%</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="/static/wind.png" alt="">
+                        <div>
+                            <p class="wind">6 m/s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="weather">
+                <h3 class="day">Day</h3>
+                <img src="/static/sun.png" class="weather-icon" aria-hidden="true">
+                <h1 class="temp">21°C</h1>
+                <h2 class="city">Oslo</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="/static/humidity.png" alt="">
+                        <div>
+                            <p class="humidity">50%</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="/static/wind.png" alt="">
+                        <div>
+                            <p class="wind">6 m/s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="weather">
+                <h3 class="day">Day</h3>
+                <img src="/static/sun.png" class="weather-icon" aria-hidden="true">
+                <h1 class="temp">21°C</h1>
+                <h2 class="city">Oslo</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="/static/humidity.png" alt="">
+                        <div>
+                            <p class="humidity">50%</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="/static/wind.png" alt="">
+                        <div>
+                            <p class="wind">6 m/s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="weather">
+                <h3 class="day">Day</h3>
+                <img src="/static/sun.png" class="weather-icon" aria-hidden="true">
+                <h1 class="temp">21°C</h1>
+                <h2 class="city">Oslo</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="/static/humidity.png" alt="">
+                        <div>
+                            <p class="humidity">50%</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="/static/wind.png" alt="">
+                        <div>
+                            <p class="wind">6 m/s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="weather">
+                <h3 class="day">Day</h3>
+                <img src="/static/sun.png" class="weather-icon" aria-hidden="true">
+                <h1 class="temp">21°C</h1>
+                <h2 class="city">Oslo</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="/static/humidity.png" alt="">
+                        <div>
+                            <p class="humidity">50%</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="/static/wind.png" alt="">
+                        <div>
+                            <p class="wind">6 m/s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.body-dark {
+    background-color: #4B778D;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.container>* {
+  flex: 1 1 300px;
+}
+
+.card {
+    max-width: 325px;
+    width: 325px;
+    height: 450px;
+    background: rgb(117,95,176);
+    background: linear-gradient(180deg, rgba(117,95,176,1) 0%, rgba(234,175,200,0.9318321078431373) 80%);
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.card-dark {
+    background: rgb(143,217,168);
+    background: linear-gradient(180deg, rgba(143,217,168,1) 0%, rgba(40,181,181,1) 80%);
+}
+
+.overview {
+    margin: 20px 50px 50px 50px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.search {
+    width: 100%;
+    margin: 50px 50px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-input {
+    border: solid;
+    border-color: #EBECEE;
+    border-width: 2px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    color: #414a4c;
+    outline: 0;
+    height: 60px;
+    max-width: 550px;
+    padding: 20px;
+    flex: 1;
+    margin: 0 16px 0 0;
+    font-size: 18px;
+
+}
+
+.search-btn {
+    border: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    color: #EBECEE;
+    outline: 0;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+
+    transition: border-color 0.3s;
+    
+}
+
+.search-dark {
+    background: #8FD9A8;
+    border-color: #8FD9A8;
+
+}
+
+.search button img {
+    width: 20px;
+}
+
+#hover-effect-light {
+    border-color: rgba(117,95,176,1);
+}
+
+#hover-effect-dark {
+    border-color: #28B5B5;
+}
+
+.weather img {
+    width: 90px;
+    height: 90px;
+}
+
+.weather-icon {
+    width: 150px;
+    margin: 10px;
+}
+
+.weather h1 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.weather h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+.col img {
+    width: 50px;
+    height: 50px;
+}
+
+.humidity, .wind {
+    font-size: 1.2rem;
+    margin-top: 12px;
+}
+
+.invalid-input {
+    color: red;
+}
+
+.card {
+    display: none;
+}
+
+.error-message {
+    margin: 10px 50px 10px 70px;
+    display: none;
+    color: #272829;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.forecast {
+    margin: 20px;
+    color: rgba(117,95,176,1);
+    display: block;
+    font-size: 3rem;
+}
+
+.forecast-dark {
+    color: #8FD9A8;
+}
+
+::placeholder {
+    color: #414a4c;
+}
+
+.day {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* Slider CSS */
+.switch {
+  --circle-dim: 2.4em;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 6em;
+  height: 3em;
+  margin: 0 5% 0 auto;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(234,175,200,0.9318321078431373);
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider-card {
+  position: absolute;
+  content: "";
+  height: var(--circle-dim);
+  width: var(--circle-dim);
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  transition: .4s;
+  pointer-events: none;
+}
+
+.slider-card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  border-radius: 50%;
+  transition: .4s transform;
+}
+
+.slider-card-front {
+  background-color: rgba(117,95,176,1);
+}
+
+.slider-card-back {
+  background-color: #28B5B5;
+  transform: rotateY(180deg);
+}
+
+input:checked ~ .slider-card .slider-card-back {
+  transform: rotateY(0);
+}
+
+input:checked ~ .slider-card .slider-card-front {
+  transform: rotateY(-180deg);
+}
+
+input:checked ~ .slider-card {
+  transform: translateX(3em);
+}
+
+input:checked ~ .slider {
+  background-color: #8FD9A8;
+}
