@@ -1,6 +1,4 @@
 # Weather App
-#### Video Demo:  <https://youtu.be/4E56A7DA-Ow>
-#### Description:
 Welcome to **Weather App**! A simple weather application that retrieves a five-day weather forecast for any location worldwide using the OpenWeatherMap API. This app was designed and implemented by me as part of CS50x 2023. 
 
 ![Weather App](images/app.png)
@@ -27,7 +25,7 @@ API_KEY="abcdefg1234567"
 Run `node server.js` to start the application. You can then view the app by opening http://localhost:3000 in your browser!
 
 ## Features
- - This application is pretty straightforward. Users can search for weather information by typing the location and either clicking the search button or simply pressing the 'Enter' key. The app then provides a five-day weather forecast, featuring a weather icon symbolizing the conditions for each day, along with temperature, humidity, and wind speed data
+ - This application is pretty straightforward. Users can search for weather information by typing the location and either clicking the search button or simply pressing the 'Enter' key. The app then provides a five-day weather forecast, featuring a weather icon symbolizing the conditions for each day, along with temperature, humidity, and wind speed.
  - Additionally, users can easily switch between dark and light mode.
  - In case users input an invalid location, an error message will appear to guide them.
 
