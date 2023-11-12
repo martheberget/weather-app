@@ -1,5 +1,5 @@
 # Weather App
-Welcome to **Weather App**! A simple weather application that retrieves a five-day weather forecast for any location worldwide using the OpenWeatherMap API. This app was designed and implemented by me as part of CS50x 2023. 
+Welcome to **Weather App**! A simple weather application that retrieves a five-day weather forecast for any location worldwide using the OpenWeatherMap API. This app was designed and implemented by me as the final project for CS50x 2023. Created for educational purposes.
 
 ![Weather App](images/app.png)
 
